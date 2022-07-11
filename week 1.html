@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--Week 1 assignment, html tags
+Assignment: Launching your UAT Space Program HTML Document Tags
+Cameron Faison
+camfaison32@gmail.com-->
+<!--this connects javascript and html-->
+<!--this connects my html site and css-->
+<!--this code displays the title of the page-->
+<!--this displays the UAT logo-->
+<!-- this displays the header UAT space program and Countdown Timer-->
+<!--this creates the button, and gives it different options for use-->
+<!--this shows what the status of the craps game is after clicing the button-->
+<html>
+
+    <head>
+        <script src="code.js"></script>
+       <link href="style.css" rel="stylesheet" type="text/css">
+        <title> 
+       Cameron Faisons UAT Space Page
+        </title>
+    </head>
+
+    <body>
+        
+       
+        <table>
+            <tr>
+                <td><img src="UATspaceLogo-2.jpg"></td>
+                <td>
+                    <h1> 
+                        UAT space program
+                    </h1>      
+                </td>
+            </tr>
+        </table>  
+
+        <!--Data table-->
+        <table id="data" border="2" width="70%">
+            <col style="width: 35%">
+            <col style="width: 35%">
+            <thead>
+                <th>
+                    Data type
+                </th>
+                <th>
+                    Reading
+                </th>
+            </thead>
+            <tbody>
+                <!--table entry for seconds-->
+                <tr id="seconds">
+                    <td>Time elapsed:</td>
+                    <td>15 seconds</td>
+                </tr>
+                <!--table entry for latitude-->
+                <tr id="latitude">
+                    <td>Latitude:</td>
+                    <td>0</td>
+                </tr> 
+                <!--table entry for longitude-->
+                <tr id="longitude">
+                    <td>Longitude:</td>
+                    <td>0</td>
+                </tr>
+                <!--table entry for gps altitude-->
+                <tr id="gps_altitude">
+                    <td>GPS altitude:</td>
+                    <td>0</td>
+                </tr>
+                <!--table entry for bmp altitude-->
+                <tr id="bmp_altitude">
+                    <td>BMP altitude:</td>
+                    <td>30383.04</td>
+                </tr>
+                <!--table entry for bmp pressure-->
+                <tr id="bmp_pressure">
+                    <td>BMP pressure:</td>
+                    <td>2.34</td>
+                </tr>
+                <!--table entry for bmp temperature-->
+                <tr id="bmp_temperature">
+                    <td>BMP temperature:</td>
+                    <td>0</td>
+                </tr>
+                <!--table entry for dig temperature-->
+                <tr id="dig_temperature">
+                    <td>Digital temperature:</td>
+                    <td>24.12</td>
+                </tr>
+                <!--table entry for css temperature-->
+                <tr id="css_temperature">
+                    <td>CSS temperature:</td>
+                    <td>25</td>
+                </tr>
+                <!--table entry for css eC02-->
+                <tr id="css_eC02">
+                    <td>CSS eC02:</td>
+                    <td>400</td>
+                </tr>
+                <!--table entry for cssTV0C-->
+                <tr id="css_TV0C">
+                    <td>CSS TV0C:</td>
+                    <td>0</td>
+                </tr>
+                <!--table entry for UV-->
+                <tr id="UV">
+                    <td>UV:</td>
+                    <td>0</td>
+                </tr>
+                <!--table entry for accelX-->
+                <tr id="accelX">
+                    <td>Accel X:</td>
+                    <td>-0.87</td>
+                </tr>
+                <!--table entry for accelY-->
+                <tr id="accelY">
+                    <td>Accel Y:</td>
+                    <td>-0.82</td>
+                </tr>
+                <!--table entry for accelZ-->
+                <tr id="accelZ">
+                    <td>Accel Z:</td>
+                    <td>9.61</td>
+                </tr>
+                <!--table entry for magneticX-->
+                <tr id="magneticX">
+                    <td>Magnetic X:</td>
+                    <td>0.13</td>
+                </tr>
+                <!--table entry for magneticY-->
+                <tr id="magneticY">
+                    <td>Magnetic Y:</td>
+                    <td>0.57</td>
+                </tr>
+                <!--table entry for magneticZ-->
+                <tr id="magneticZ">
+                    <td>Magnetic Z:</td>
+                    <td>-0.24</td>
+                </tr>
+                <!--table entry for gyroX-->
+                <tr id="gyroX">
+                    <td>Gyro X:</td>
+                    <td>4.66</td>
+                </tr>
+                <!--table entry for gyroY-->
+                <tr id="gyroY">
+                    <td>Gyro Y:</td>
+                    <td>-0.01</td>
+                </tr>
+                <!--table entry for gyroZ-->
+                <tr id="gyroZ">
+                    <td>Gyro Z:</td>
+                    <td>-0.4</td>
+                </tr>
+                
+
+
+              </tbody>
+
+        </table>
+        <!--button to run the timer-->
+        <br>
+        <button onclick="startFun();" class="button" id="startButton">Start</button>
+        <!--button to stop the timer-->
+        <button onclick="startFun();" class="button" id="startButton">Start</button><br><br>
+        <h2>PLease try your hand at Craps!</h2>
+
+        <div id="crapsStatus">Craps Status</div><br>
+        <button onclick="playCraps();" class="button">Play Craps</button>
+        <br>
+        <br>
+        <h3>Play space station sounds</h3>
+        <h4>Warning, it may get loud</h4>  
+        <button class="lgButton" onclick="playStation();">Play space station sounds</button>    
+    </body>
+
+</html>
